@@ -1,0 +1,291 @@
+''
+'' A white on blue theme based on Amiga Workbench 1.x
+'' https://en.wikipedia.org/wiki/Workbench_(AmigaOS)#Workbench_1.x
+''
+'' Original Author: Matthew Leather
+''
+
+!$THEME = "hamkorlab"
+
+!$BLACK  = "#1E3B4B"
+!$BLUE   = "#0B58A8"
+!$ORANGE = "#FDA325"
+!$RED    = "#FE6666"
+!$WHITE  = "#FFFFFF"
+!$GREEN  = "#5FB14B"
+!$DARK_GREEN  = "#2f5825"
+!$LIGHT_GREEN  = "#AFD8A5"
+!$GRAY = "#778892"
+!$LIGHT_GRAY = "#F2F3F7"
+
+!$BGCOLOR = $WHITE
+!$FGCOLOR = $BLACK
+
+!$FONT_NAME = "Sans Serif"
+
+
+<style>
+  root {
+    roundcorner 1
+    BackgroundColor $BGCOLOR
+    FontColor $FGCOLOR
+    FontName $FONT_NAME
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  groupHeader {
+    BackgroundColor $FGCOLOR
+    FontColor $BGCOLOR
+    FontStyle bold
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+    roundcorner 20
+  }
+  referenceHeader {
+    BackgroundColor $FGCOLOR
+    FontColor $BGCOLOR
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor $FGCOLOR
+    FontColor $BGCOLOR
+    FontStyle bold
+  }
+  title {
+    FontSize 22
+    FontStyle bold
+    LineThickness 0
+  }
+
+  sequenceDiagram{
+    participant{
+      RoundCorner 20
+    }
+    box{
+      Margin 20
+    }
+    arrow {
+      FontColor $BLACK
+      LineColor $GRAY
+    }
+  }
+  stateDiagram {
+    start{
+      BackgroundColor $GREEN
+    }
+    state{
+      RoundCorner 20
+    }
+    fork{
+      BackgroundColor $GREEN
+    }
+    arrow {
+      FontSize 13
+      LineColor $GREEN
+    }
+  }
+  mindmapDiagram {
+    node {
+      BackgroundColor $WHITE
+      LineColor $GREEN
+      FontColor $BLACK
+      FontStyle bold
+    }
+    :depth(1) {
+      BackgroundColor $GREEN
+      LineColor $GREEN
+      FontColor $WHITE
+    }
+    :depth(2) {
+      LineColor $ORANGE
+      BackGroundColor $ORANGE
+      FontColor $BLACK
+    }
+  }
+
+</style>
+
+
+skinparam state{
+    BackgroundColor $LIGHT_GREEN
+    FontColor $DARK_GREEN
+    BorderColor $GREEN
+    ArrowColor $GREEN
+    ArrowFontColor $GREEN
+    BorderThickness 2
+}
+
+skinparam BoxPadding 20
+skinparam ArrowLollipopColor $FGCOLOR
+skinparam BackgroundColor $BGCOLOR
+skinparam DefaultFontName $FONT_NAME
+skinparam DefaultMonospacedFontName $FONT_NAME
+skinparam LifelineStrategy nosolid
+skinparam SequenceLifeLineBorderColor $FGCOLOR
+skinparam Shadowing false
+skinparam UseBetaStyle true
+skinparam Activity {
+  BackgroundColor $LIGHT_GREEN
+  BarColor $FGCOLOR
+  BorderColor $FGCOLOR
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+}
+skinparam CircledCharacter {
+  FontColor $BGCOLOR
+  FontName $FONT_NAME
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor $BGCOLOR
+  BorderColor $FGCOLOR
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  HeaderBackgroundColor $LIGHT_GREEN
+  FontSize 14
+}
+skinparam ClassAttribute {
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  FontStyle 14
+}
+skinparam ClassStereotype {
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+}
+skinparam Footer {
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+}
+skinparam Header {
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  FontStyle Bold
+}
+skinparam Hyperlink {
+  Color $ORANGE
+}
+skinparam IconPackage {
+  Color $FGCOLOR
+  BackgroundColor $BGCOLOR
+}
+skinparam IconPrivate {
+  Color $FGCOLOR
+  BackgroundColor $BGCOLOR
+}
+skinparam IconProtected {
+  Color $FGCOLOR
+  BackgroundColor $BGCOLOR
+}
+skinparam IconPublic {
+  Color $FGCOLOR
+  BackgroundColor $BGCOLOR
+}
+skinparam Note {
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+}
+skinparam Object {
+  BorderColor $FGCOLOR
+}
+skinparam Package {
+  BorderColor $FGCOLOR
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+}
+skinparam StereotypeA {
+  BackgroundColor $FGCOLOR
+  BorderColor $FGCOLOR
+}
+skinparam StereotypeC {
+  BackgroundColor $FGCOLOR
+  BorderColor $FGCOLOR
+}
+skinparam StereotypeE {
+  BackgroundColor $FGCOLOR
+  BorderColor $FGCOLOR
+}
+skinparam StereotypeI {
+  BackgroundColor $FGCOLOR
+  BorderColor $FGCOLOR
+}
+skinparam StereotypeN {
+  BackgroundColor $FGCOLOR
+  BorderColor $FGCOLOR
+}
+skinparam UseCase {
+  BackgroundColor $WHITE
+  BorderColor $LIGHT_GREEN
+  BorderThickness 2
+  FontStyle bold
+}
+
+skinparam Actor{
+  BorderColor $GREEN
+  BorderThickness 2
+  BackgroundColor $GREEN
+  FontStyle bold
+}
+
+skinparam Rectangle{
+  BorderColor $LIGHT_GREEN
+}
+
+skinparam sequence {
+  ArrowColor $BLACK
+  ActorBorderColor $GREEN
+  ArrowFontColor $BLACK
+  LifeLineBorderColor $DARK_GREEN
+  LifeLineBackgroundColor $LIGHT_GREEN
+}
+skinparam Participant {
+  BackgroundColor $GREEN
+  FontColor $WHITE
+  FontStyle bold
+  BorderColor $GREEN
+}
+skinparam Queue {
+  BackgroundColor $GREEN
+  FontColor $WHITE
+  FontStyle bold
+  BorderColor $DARK_GREEN
+}
+skinparam Actor {
+  Padding 16
+  BorderColor $DARK_GREEN
+  BackgroundColor $GREEN
+  FontColor $DARK_GREEN
+  FontStyle bold
+  roundcorner 10
+}
+skinparam Boundary {
+  Padding 16
+  BorderColor $DARK_GREEN
+  BackgroundColor $GREEN
+  FontColor $DARK_GREEN
+  FontStyle bold
+  roundcorner 10
+}
+skinparam Database{
+  BorderColor $DARK_GREEN
+  BackgroundColor $GREEN
+  FontColor $DARK_GREEN
+  FontStyle bold
+}
+skinparam component {
+  BackgroundColor $LIGHT_GREEN
+  FontColor $DARK_GREEN
+  BorderColor #GREEN
+  ArrowColor $BLACK
+  ArrowFontColor $BLACK
+}
